@@ -79,17 +79,21 @@ Ai Strat function calls:
   Moves the grid anywhere (random)
   Returns 3-length array to AIStrat, which will return it to Play
   Returns a fail array signaling to AI strat it didn’t  find anything useful
+  
  aiMoveRand
  
   Returns random untaken position on grid
+  
  AISmall Tracker
  
   Changes the grid center depending on a number parameter
    If the number is 1, grid moves left; if it’s 8 (9-1), grid moves right, in the opposite direction of when the number is 1; If the number is 2, grid moves up; if it’s 7 (9-2), grid moves down, in the opposite direction of    when the number is 2, and so on with the other numbers 
+   
  InitialMove
  
   Returns the center piece of the grid or the corner pieces (if the center is taken) or a random piece (if everything i taken somehow)
   Will be called when the player hasn’t put down 2 pieces yet and there is nothing to win or defend
+  
  Ai strat vars
  
   aiChoiceR: random number to choose between placing piece or shifting grid when the player has put down between 2 or 3 pieces
