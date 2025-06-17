@@ -29,7 +29,8 @@ Initiation & termination:
  The Winner function has a playerWin scoreboard which keeps track of each player’s number of wins; at the end it compares the scores and returns an int representing the player who won (1 for O, -1 for X), or a tie or no win. 
  Before quitting, the game thanks the player for playing by assigning the Player to a gameOver boolean variable in TT2().
  
-Player function deals with moves.
+Player function deals with moves:
+
  If no win is detected, the Player function gets a move by calling the HumanStrat or AIStrat that is the player which is identified by finding if the turns is even or odd.
  The strategy functions return different length arrays, and that is used to distinguish between different moves; non-move options like quit and the rulebook will have different elements which will be used to return true to    get out of the function or print the rules.
  Strategy functions returning a 2-element array are specifying a position to place the player’s piece.
@@ -38,6 +39,7 @@ Player function deals with moves.
  Strategy functions returning a 4-element array are specifying an original position and a new position to move a piece that’s already used.
  
 HumanStrat: 
+
  Prints the options that the player has depending on how many pieces they have on the board.
  Takes in user’s choice (forces user to only type one of the choices).
  Depending on the choice, it will call the functions to execute each option, or return an array with specific elements to signal a quit or rulebook.
@@ -60,6 +62,7 @@ HumanStrat:
  Returns old and new positions.
  
 Ai Strat function calls: 
+
  WinMoveDefend
   First checks if a win can be created with a piece (given there are still pieces)
   Returns position of piece
