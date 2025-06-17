@@ -1,0 +1,15 @@
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\bin\Debug\net6.0\NewTicTacTwo.exe
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\bin\Debug\net6.0\NewTicTacTwo.deps.json
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\bin\Debug\net6.0\NewTicTacTwo.runtimeconfig.json
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\bin\Debug\net6.0\NewTicTacTwo.dll
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\bin\Debug\net6.0\NewTicTacTwo.pdb
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\NewTicTacTwo.csproj.AssemblyReference.cache
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\NewTicTacTwo.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\NewTicTacTwo.AssemblyInfoInputs.cache
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\NewTicTacTwo.AssemblyInfo.cs
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\NewTicTacTwo.csproj.CoreCompileInputs.cache
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\NewTicTacTwo.dll
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\refint\NewTicTacTwo.dll
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\NewTicTacTwo.pdb
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\NewTicTacTwo.genruntimeconfig.cache
+G:\My Drive\NewTicTacTwo\NewTicTacTwo\obj\Debug\net6.0\ref\NewTicTacTwo.dll
