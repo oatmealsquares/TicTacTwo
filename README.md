@@ -16,8 +16,10 @@ Once each player has placed at least two of their pieces, they may do one of thr
 The first player to create a horizontal, vertical, or diagonal line of their own pieces contained within the tic-tac-toe grid wins. If in a single move the grid has been moved such that it contains both a three-in-a-row of X pieces and a three-in-a-row of O pieces, then the game is a tie.
 
 
-Explanation of Game Design: 
+Explanation of Game Design: \n
+
 Initiation & termination:
+
  The game is started with a call to TT2().
  TT2() initializes things like the strategy names and players and prints a menu where the player can play, quit, or switch their player modes to human or computer.
  TT2() calls the Play function if the user types to play.
