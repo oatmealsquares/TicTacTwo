@@ -64,6 +64,7 @@ HumanStrat:
 Ai Strat function calls: 
 
  WinMoveDefend
+ 
   First checks if a win can be created with a piece (given there are still pieces)
   Returns position of piece
   Second, checks if a win can be created by moving grid
@@ -79,27 +80,33 @@ Ai Strat function calls:
   Returns 3-length array to AIStrat, which will return it to Play
   Returns a fail array signaling to AI strat it didn’t  find anything useful
  aiMoveRand
+ 
   Returns random untaken position on grid
  AISmall Tracker
+ 
   Changes the grid center depending on a number parameter
    If the number is 1, grid moves left; if it’s 8 (9-1), grid moves right, in the opposite direction of when the number is 1; If the number is 2, grid moves up; if it’s 7 (9-2), grid moves down, in the opposite direction of    when the number is 2, and so on with the other numbers 
  InitialMove
+ 
   Returns the center piece of the grid or the corner pieces (if the center is taken) or a random piece (if everything i taken somehow)
   Will be called when the player hasn’t put down 2 pieces yet and there is nothing to win or defend
  Ai strat vars
+ 
   aiChoiceR: random number to choose between placing piece or shifting grid when the player has put down between 2 or 3 pieces
   forGridShift: 3-length array to return if ai decides to do random grid shift 
   origCent: a copy of the original gridCenter for finding a random position or grid center, since the original gridCenter might change in WinMoveDefend"
 
 The AI strat categorizes the problem into one of three situations. Mainly, it calls the WinMoveDefend function that returns a move to win or else block the opponent; otherwise it returns a random piece or random shift of the grid:
 
-1st Scenario: Player has not put down two pieces yet
+1st Scenario: 
+Player has not put down two pieces yet
 If opponent has not put down 2 pieces yet, prioritize center and then corner positions
 If all positions are somehow taken, a random piece will be placed (however, this should never happen since the center + corners = 5 places)
 If opponent has put down second piece, move will consider putting a piece down to block the opponent by calling WinMoveDefend
 WinMoveDefend returns the first winning or blocking move that can be made by using a piece placement or grid shift (for now, it ignores wins or losses created by  swapping pieces)
 
-2nd Scenario: Player has put down at least 2 pieces but not 4 yet
+2nd Scenario: 
+Player has put down at least 2 pieces but not 4 yet
 WinMoveDefend is called
 Strat puts a piece somewhere if it will create a win
 Shifts grid if it will create win 
@@ -108,7 +115,8 @@ If no need for a blocking piece, but opponent can win by shifting the grid, Stra
 If WinMoveDefend identifies no urgent wins/losses, it will return empty fail array{ }
 A random AI choice decides whether to randomly put a piece on the grid or move the grid 
 
-3rd Scenario: Player has used up all pieces, so they can only swap or move grid
+3rd Scenario: 
+Player has used up all pieces, so they can only swap or move grid
 WinMoveDefend is called
 Strat shifts grid if it will create win 
 If no win, but opponent can win by shifting the grid, Strat shifts the grid away from where the opponent would want to shift it
