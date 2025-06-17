@@ -98,7 +98,7 @@ Ai Strat function calls:
  
   aiChoiceR: random number to choose between placing piece or shifting grid when the player has put down between 2 or 3 pieces
   forGridShift: 3-length array to return if ai decides to do random grid shift 
-  origCent: a copy of the original gridCenter for finding a random position or grid center, since the original gridCenter might change in WinMoveDefend"
+  origCent: a copy of the original gridCenter for finding a random position or grid center, since the original gridCenter might change in WinMoveDefend
 
 The AI strat categorizes the problem into one of three situations. Mainly, it calls the WinMoveDefend function that returns a move to win or else block the opponent; otherwise it returns a random piece or random shift of the grid:
 
